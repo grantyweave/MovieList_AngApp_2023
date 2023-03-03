@@ -1,0 +1,11 @@
+<!-- <H1>Downriver Dollar Theater</H1>
+<h2>List Of Movies:</h2> -->
+
+<div *ngFor="let movies of allMovies, index as i">
+    <a {{movies.title}}> </a>
+</div>
+
+<ul>
+    <li *ngFor="let movies of allMovies">{{movies.title}} | {{movies.releaseYear}}
+    </li>
+</ul>
